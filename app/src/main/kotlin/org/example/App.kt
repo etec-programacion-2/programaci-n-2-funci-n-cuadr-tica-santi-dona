@@ -28,4 +28,25 @@ fun main() {
         val fx = calcularFuncionCuadratica(x.toDouble(), a, b, c)
         println("$x\t$fx")
     }
+
+    // Etapa 3
+    // Calcular el discriminante
+    val discriminante = b * b - 4 * a * c
+
+    // Determinar y mostrar las raíces según el discriminante
+    if (discriminante > 0) {
+        println("La ecuación tiene dos soluciones reales diferentes.")
+        val raiz1 = (-b + Math.sqrt(discriminante)) / (2 * a)
+        val raiz2 = (-b - Math.sqrt(discriminante)) / (2 * a)
+        println("Raíz 1: %.2f".format(raiz1))
+        println("Raíz 2: %.2f".format(raiz2))
+    } 
+    else if (discriminante == 0.0) {
+        println("La ecuación tiene una solución real doble.")
+        val raizUnica = -b / (2 * a)
+        println("Raíz única: %.2f".format(raizUnica))
+    } 
+    else {
+        println("La ecuación no tiene soluciones reales.")
+    }
 }
