@@ -49,4 +49,8 @@ fun main() {
     else {
         println("La ecuación no tiene soluciones reales.")
     }
+    
+    //Etapa 4
+    // Mostrar mensaje final indicando el fin del programa
+    println("\n--- Fin del programa ---")
 }
