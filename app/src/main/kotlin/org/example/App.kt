@@ -21,7 +21,7 @@ fun main() {
     fun calcularFuncionCuadratica(x: Double, a: Double, b: Double, c: Double): Double {
         return a * x * x + b * x + c
     }
-    // Mostrar tabla de valores para un rango de x
+    // Mostrar tabla de valores para un rango de x con el tabulador para generar un orden en la tabla
     println("Tabla de valores:")
     println("x\tf(x)")
     for (x in -5..5) {
@@ -51,6 +51,6 @@ fun main() {
     }
     
     //Etapa 4
-    // Mostrar mensaje final indicando el fin del programa
+    // Mostrar mensaje final que indica el final del programa
     println("\n--- Fin del programa ---")
 }
